@@ -1,8 +1,9 @@
-// Placing an order for bob to buy item with ID 2
-// VARS NEEDED:
-// PURCHASE ID
-// BUYER USERNAME
-// ITEM ID
+/* Placing an order for bob to buy item with ID 2
+VARS NEEDED:
+PURCHASE ID
+BUYER USERNAME
+ITEM ID
+*/
 
 INSERT INTO Purchase (ID, buyer, item) VALUES
 	(1, 'bob', 2);
