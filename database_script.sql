@@ -1,6 +1,8 @@
 CREATE TABLE MarketUser (
 	username varchar(255) NOT NULL,
 	password varchar(255) NOT NULL,
+	total_money_made int DEFAULT 0,
+	total_money_spent int DEFAULT 0,
 	PRIMARY KEY (username)
 );
 
