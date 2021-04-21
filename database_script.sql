@@ -19,11 +19,9 @@ CREATE TABLE Item (
 CREATE TABLE Purchase (
 	ID int NOT NULL,
 	buyer varchar(255),
-	seller varchar(255),
 	item int,
-	date date,
+	date date DEFAULT CURRENT_DATE,
 	PRIMARY KEY (ID),
 	FOREIGN KEY (buyer) REFERENCES MarketUser(username),
-	FOREIGN KEY (seller) REFERENCES MarketUser(username),
 	FOREIGN KEY (item) REFERENCES Item(ID)
 );
